@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+}
+
+.pomodoro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+    flex-direction: column;
+    border: 1px solid #ff4742;
+    border-radius: 15px;
+    background: #e5403b;
+    box-shadow: rgba(229, 64, 59, 0.8) 0px 8px 24px;
+}
+
+.row-container {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
+
+.clock-container {
+    padding-top: 20px;
+    justify-content: flex-end;
+}
+
+#clock{
+    width: 50%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: aliceblue;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    width: 24%;
+    text-align: center;
+    padding-left: 20px;
+}
+
+
+label {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+input {
+    padding: 5px;
+    width:  80px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: antiquewhite;
+    border: none;
+    background-color: #d63833;
+    border-radius: 6px;
+}
+
+.start-container{
+    justify-content: center;
+}
+
+#start-button{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    padding: 12px 14px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #ff4742;
+    border-radius: 6px;
+    background: #ff4742;
+    outline: 0;
+    box-shadow: rgba(0,0,0,0.1) 1px 2px 4px;
+}
+
+#start-button:hover {
+    background-color: aliceblue;
+    font-weight: 600;
+    color: #ff4742;
+
+}#stop-button{
+    margin-top: 10px;
+    margin-left: 10px;
+
+    margin-bottom: 40px;
+    padding: 12px 14px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #ff4742;
+    border-radius: 6px;
+    background: #ff4742;
+    outline: 0;
+    box-shadow: rgba(0,0,0,0.1) 1px 2px 4px;
+}
+
+#stop-button:hover {
+    background-color: aliceblue;
+    font-weight: 600;
+    color: #ff4742;
+}
+
+.settings-container{
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
