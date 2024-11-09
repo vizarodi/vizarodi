@@ -49,7 +49,7 @@ stopButton.onclick = () => {
 
 function stopPomodoro(){
     /*detener*/
-
+    window.location.reload(); /* tanto me costaba esto?! que idiota que soy */
 }
 
 function startPomodoro(){
