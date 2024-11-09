@@ -8,8 +8,13 @@ window.onload = () => {
     let breakTimeInput = document.getElementById("break-time");
     let restTimeInput = document.getElementById("rest-time");
 
+    /* this is to not spam the start button */
+    let canPress = true;
+
 /* sonidos?*/
     let clickSound = new Audio('./Sounds/click.mp3');
+    let timeAlarm = new Audio('./Sounds/alarm.mp3');
+    let resetAlarm = new Audio('./Sounds/stop.mp3');
 
     startButton.addEventListener('click', ()=>{
         clickSound.play();
@@ -39,8 +44,11 @@ function formatNumbers(time) {
 }
 /* Clicks */
 startButton.onclick = () => {
-    populateVariables();
-    startPomodoro();
+    if(canPress != false){
+        canPress = false;
+        populateVariables();
+        startPomodoro();
+    }
 }
 
 stopButton.onclick = () => {
@@ -90,6 +98,7 @@ function populateVariables() {
             timer();
             console.log("Time to work!! TC:" + timesCompleted);
         } else {
+            timeAlarm.play();
             currentTime = breakTime;
             timesCompleted++;
             timer();
